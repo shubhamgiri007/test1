@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(65, 63, 63);
+}
+.box{
+    background-color: white;
+    width: 120px;
+    height: 120px;
+    border-radius: 40%;
+    position: relative;
+    animation-name: myanime;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    
+}
+@keyframes myanime {
+    0%{
+        background-color: honeydew;
+        /*left: 0px;
+        top: 0px;*/
+        border-radius: 0 0 0 0;
+    }
+    25%{
+        background-color: hotpink;
+        /*left: 300px;
+        top: 0px;*/
+        border-radius: 50% 0 0 0;
+    }
+    50%{
+        background-color: indigo;
+        /*left: 300px;
+        top: 300px;*/
+        border-radius: 50% 50% 0 0;
+    }
+    75%{
+        background-color: khaki;
+        /*left: 0px;
+        top: 300px;*/
+        border-radius: 50% 50% 50% 0;
+    }
+    100%{
+        background-color: lawngreen;
+        /*left: 0px;
+        top: 0px;*/
+        border-radius: 50% 50% 50% 50%;
+    }
+}
